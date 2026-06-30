@@ -33,13 +33,3 @@ __pycache__/
 # Sistema operacional
 .DS_Store
 Thumbs.db
-
-# Arquivos internos / materiais do curso (fora do escopo do projeto standalone)
-/artigo.tex
-/relatorio.md
-/comparacao_relatorio_codigo.md
-/apres_extraida.txt
-/relatorio_extraido.txt
-/relatorio.pdf
-/trabCE.pdf
-/Apresentacao_BI-RADS.pdf
