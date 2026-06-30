@@ -2,8 +2,6 @@
 
 Aplicativo gráfico (Python/Tkinter) que **segmenta a mama** e **classifica a densidade mamária (BI-RADS I–IV)** em mamografias, usando *transfer learning* com **VGG16** e **EfficientNet-B0**, segmentação clássica de imagens (CLAHE, Otsu, componentes conexas, crescimento de região) e explicabilidade por **Grad-CAM**.
 
-![Exemplo de segmentação](relatorio/segmentacao_exemplo.png)
-
 ## Sobre
 
 A densidade da mama (escala BI-RADS, do *American College of Radiology*) está associada ao risco de câncer e à redução da sensibilidade da mamografia, pois um tecido mais denso pode ocultar lesões. Este projeto implementa um aplicativo completo que lê mamografias, isola a mama do fundo e das anotações, e reconhece a densidade automaticamente.
@@ -40,8 +38,6 @@ Além do básico, o trabalho é um estudo comparativo controlado de **16 experim
     ├── relatorio.tex
     └── *.png
 ```
-
-> `dataset/` (completo) e `models/` (pesos `.pth`) não são versionados — veja `.gitignore`.
 
 ## Requisitos
 
@@ -93,9 +89,7 @@ A divisão é automática: imagens com **número múltiplo de 4** vão para **te
 | VGG16 | 4 classes | fine-tuning | **0,712** |
 | EfficientNet-B0 | binária | fine-tuning | **0,865** |
 
-O *fine-tuning* superou de forma consistente a base congelada (sobretudo nas 4 classes), e a ponderação fixa reequilibrou a classe mais difícil (II). Análise completa em **[`relatorio/relatorio.pdf`](relatorio/relatorio.pdf)**.
-
-![Matriz de confusão (VGG16, 4 classes, peso fixo)](relatorio/cm_vgg_fixo.png)
+O *fine-tuning* superou de forma consistente a base congelada (sobretudo nas 4 classes), e a ponderação fixa reequilibrou a classe mais difícil (II).
 
 ## Autores
 
