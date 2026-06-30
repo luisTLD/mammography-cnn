@@ -1,0 +1,45 @@
+# ==========================================================================
+# Dataset completo: NAO versionar (tamanho + restricoes de uso das imagens).
+# Use a amostra em dataset_exemplo/ para testar a interface e a segmentacao.
+# ==========================================================================
+dataset/
+
+# Modelos treinados (pesos .pth, pesados, gerados pelo treino)
+models/
+*.pth
+
+# Ambientes virtuais Python
+.venv/
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Auxiliares de compilacao LaTeX (mantemos apenas .tex e .pdf finais)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos internos / materiais do curso (fora do escopo do projeto standalone)
+/artigo.tex
+/relatorio.md
+/comparacao_relatorio_codigo.md
+/apres_extraida.txt
+/relatorio_extraido.txt
+/relatorio.pdf
+/trabCE.pdf
+/Apresentacao_BI-RADS.pdf

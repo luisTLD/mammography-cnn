@@ -1,0 +1,26 @@
+Rede: vgg | Tarefa: binaria
+Congelamento: False | Peso: automatico
+Imagens segmentadas: True
+Hiperparametros: epocas_max=25, epocas_rodadas=8, lr=0.001, batch=32, dropout=0.50
+Tempo de treino: 468.4 s
+Tempo de inferencia no teste: 11.084 s
+
+Matriz de confusao (linha = verdadeiro, coluna = predito):
+[[144  12]
+ [ 34 122]]
+
+Sensibilidade: 0.7821
+Especificidade: 0.9231
+Precisao: 0.9104
+Acuracia: 0.8526
+Escore F1: 0.8414
+
+Historico por epoca (perda_treino, perda_validacao, acuracia_validacao):
+epoca 01: 0.4489, 0.2944, 0.8714
+epoca 02: 0.2871, 0.2971, 0.8929
+epoca 03: 0.1847, 0.2903, 0.8571
+epoca 04: 0.1210, 0.6450, 0.9000
+epoca 05: 0.1077, 1.1861, 0.9071
+epoca 06: 0.1143, 0.4655, 0.8929
+epoca 07: 0.0600, 0.6510, 0.8857
+epoca 08: 0.0101, 0.7183, 0.9071

@@ -1,0 +1,31 @@
+Rede: efficientnet | Tarefa: 4 classes
+Congelamento: True | Peso: automatico
+Imagens segmentadas: True
+Hiperparametros: epocas_max=50, epocas_rodadas=11, lr=0.001, batch=16, dropout=0.30
+Tempo de treino: 125.7 s
+Tempo de inferencia no teste: 0.694 s
+
+Matriz de confusao (linha = verdadeiro, coluna = predito):
+[[56 12  3  7]
+ [22 26 26  4]
+ [ 3 22 33 20]
+ [ 5  2 10 61]]
+
+Acuracia: 0.5641
+Sensibilidade media: 0.5641
+Especificidade media: 0.8547
+Sensibilidade por classe: [0.7179, 0.3333, 0.4231, 0.7821]
+Especificidade por classe: [0.8718, 0.8462, 0.8333, 0.8675]
+
+Historico por epoca (perda_treino, perda_validacao, acuracia_validacao):
+epoca 01: 1.0554, 0.8551, 0.6214
+epoca 02: 0.8883, 0.8246, 0.6357
+epoca 03: 0.8540, 0.8392, 0.6214
+epoca 04: 0.8283, 0.7906, 0.6286
+epoca 05: 0.8147, 0.7970, 0.6214
+epoca 06: 0.7957, 0.7858, 0.6286
+epoca 07: 0.8022, 0.8096, 0.6286
+epoca 08: 0.7747, 0.8130, 0.6500
+epoca 09: 0.7774, 0.8061, 0.6286
+epoca 10: 0.7953, 0.8450, 0.6714
+epoca 11: 0.7575, 0.8320, 0.6214

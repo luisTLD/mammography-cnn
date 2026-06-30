@@ -1,0 +1,27 @@
+Rede: vgg | Tarefa: 4 classes
+Congelamento: True | Peso: fixo
+Imagens segmentadas: True
+Hiperparametros: epocas_max=25, epocas_rodadas=7, lr=0.001, batch=32, dropout=0.50
+Tempo de treino: 184.1 s
+Tempo de inferencia no teste: 1.816 s
+
+Matriz de confusao (linha = verdadeiro, coluna = predito):
+[[49 25  3  1]
+ [18 42 18  0]
+ [ 4 17 45 12]
+ [ 3  1 17 57]]
+
+Acuracia: 0.6186
+Sensibilidade media: 0.6186
+Especificidade media: 0.8729
+Sensibilidade por classe: [0.6282, 0.5385, 0.5769, 0.7308]
+Especificidade por classe: [0.8932, 0.8162, 0.8376, 0.9444]
+
+Historico por epoca (perda_treino, perda_validacao, acuracia_validacao):
+epoca 01: 1.2062, 0.9924, 0.5714
+epoca 02: 0.8552, 0.9786, 0.6214
+epoca 03: 0.7532, 1.1589, 0.5214
+epoca 04: 0.6674, 1.1087, 0.6000
+epoca 05: 0.6302, 1.3760, 0.6071
+epoca 06: 0.5413, 1.4075, 0.6286
+epoca 07: 0.3786, 1.3402, 0.5929

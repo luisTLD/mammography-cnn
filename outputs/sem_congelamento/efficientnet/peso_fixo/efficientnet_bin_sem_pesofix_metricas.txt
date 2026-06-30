@@ -1,0 +1,24 @@
+Rede: efficientnet | Tarefa: binaria
+Congelamento: False | Peso: fixo
+Imagens segmentadas: True
+Hiperparametros: epocas_max=50, epocas_rodadas=6, lr=0.001, batch=16, dropout=0.30
+Tempo de treino: 142.7 s
+Tempo de inferencia no teste: 0.812 s
+
+Matriz de confusao (linha = verdadeiro, coluna = predito):
+[[141  15]
+ [ 27 129]]
+
+Sensibilidade: 0.8269
+Especificidade: 0.9038
+Precisao: 0.8958
+Acuracia: 0.8654
+Escore F1: 0.8600
+
+Historico por epoca (perda_treino, perda_validacao, acuracia_validacao):
+epoca 01: 0.3016, 0.2458, 0.9000
+epoca 02: 0.1468, 0.3272, 0.8929
+epoca 03: 0.1063, 0.3076, 0.8929
+epoca 04: 0.0674, 0.4095, 0.8857
+epoca 05: 0.0453, 0.4176, 0.8857
+epoca 06: 0.0353, 0.3594, 0.9000
